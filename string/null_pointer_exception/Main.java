@@ -2,9 +2,9 @@ package com.example;
 
 public class Main {
     public static void validateEmails(String[] emails) {
-        for (___) {
-            if (___) {
-                System.out.println(___);
+        for (String email : emails) {
+            if (email != null && email.contains("@")) {
+                System.out.println(email);
             } else {
                 System.out.println("Invalid or missing email");
             }
